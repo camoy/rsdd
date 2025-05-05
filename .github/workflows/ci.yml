@@ -91,7 +91,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build (with feature flag)
-        run: cargo build --verbose --features="ffi" --release
+        run: cargo build --verbose --features=ffi --release
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.name }}
